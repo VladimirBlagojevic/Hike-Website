@@ -1,2 +1,115 @@
-p {
-  color: red; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.7;
+  padding: 3rem; }
+
+.heading-primary--main {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 0.6rem;
+  color: #fff;
+  animation: moveInLeft ease-out 1.5s; }
+
+.heading-primary--sub {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  animation: moveInRight ease-out 1.5s; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.1rem 5rem;
+  font-size: 1.6rem;
+  position: relative;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: all 0.4s;
+  animation: moveInBottom 2s ease-in; }
+
+.btn-white:link,
+.btn-white:visited {
+  margin-top: 4.5rem;
+  color: #fff;
+  border: 2px solid #fff; }
+
+.btn-white:hover {
+  background-color: #fff;
+  color: #A08244;
+  transform: translateY(-3px);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+
+.btn-white:active {
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header-background2.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 95vh;
+  position: relative;
+  clip-path: polygon(0 75vh, 50% 100%, 100% 75vh, 100% 0, 0 0); }
+  .header__box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    text-align: center;
+    backface-visibility: hidden; }
+  .header__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 10rem; }
+  .header__logo {
+    height: 5rem; }
