@@ -1,32 +1,55 @@
-.btn:link,
-.btn:visited{
-    display: inline-block;
-    text-decoration: none;
-    padding: 0.1rem 5rem;
-    font-size: 1.6rem;
-    position: relative;
-    border-radius: 100px;
-    text-transform: uppercase;
-    font-weight: 400;
-    transition: all 0.4s;
-    animation: moveInBottom 2s ease-in;
+.btn{
+    &:link,
+    &:visited{
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.1rem 5rem;
+        font-size: 1.6rem;
+        position: relative;
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-weight: 400;
+        transition: all 0.4s;
+
+    }
+
+    &--white:link,
+    &--white:visited{
+        color: $color-white;
+        border: 2px solid $color-white;
+        animation: moveInBottom 2s ease-in;
+    }
+
+    &--white:hover{
+        background-color: $color-white;
+        color:$color-primary; 
+        transform: translateY(-3px);
+        box-shadow: 0 2rem 4rem rgba($color-black,0.2);  
+    } 
+
+    &--white:active{
+        transform: translateY(-1px);
+        box-shadow: 0 1rem 2rem rgba($color-black,0.2);  
+    }
+
+    &--gold:link,
+    &--gold:visited{
+        color: $color-primary;
+        border: 2px solid $color-primary;
+    }
+
+    &--gold:hover{
+        background-color: $color-primary;
+        color:$color-white; 
+        transform: translateY(-3px);
+        box-shadow: 0 2rem 4rem rgba($color-black,0.2);  
+    } 
+
+    &--gold:active{
+        transform: translateY(-1px);
+        box-shadow: 0 1rem 2rem rgba($color-black,0.2);  
+    }
+    
 }
 
-.btn-white:link,
-.btn-white:visited{
-    margin-top:4.5rem;
-    color: $color-white;
-    border: 2px solid $color-white;
-}
 
-.btn-white:hover{
-    background-color: $color-white;
-    color:$color-primary; 
-    transform: translateY(-3px);
-    box-shadow: 0 2rem 4rem rgba($color-black,0.2);  
-} 
-
-.btn-white:active{
-    transform: translateY(-1px);
-    box-shadow: 0 1rem 2rem rgba($color-black,0.2);  
-}     
