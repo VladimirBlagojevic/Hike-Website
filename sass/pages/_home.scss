@@ -34,14 +34,34 @@
 }
 
 .section-about{
+    position: relative;
     margin-top: -20vh;
-    padding: 30rem 0 40rem 0;
+    padding: 30rem 0 35rem 0;
     text-align: center;
     background-image:linear-gradient(rgba($color-white,0.88), rgba($color-white,0.88)), url(../img/about-background.jpg);
     background-size:cover; 
+    z-index: 7;   
     clip-path: polygon(0 100%, 100% 75%, 100% 0,0 0);
-    z-index: 1;
-    
-    
-}   
-   
+}    
+
+.section-facts{
+    position: relative;
+    background-image:linear-gradient(rgba($color-black,0.8), rgba($color-black,0.8)), url(../img/facts-background.jpg);
+    background-size:cover; 
+    padding: 30rem 0 35rem 0;
+    background-position: top;
+    margin-top:-34rem;
+    clip-path: polygon(0 66.6%,100% 100%,100% 0,0 0);
+    z-index: 6;
+} 
+
+/*.section-guides{
+    position: relative;
+    background-image:linear-gradient(rgba($color-gray,0.8), rgba($color-gray,0.8)), url(../img/guides-background.jpg);
+    background-size:cover; 
+    padding: 25rem 0 70rem 0;
+    background-position: top;
+    clip-path: polygon(100% 33.3%,100% 66.6%, 0 100%,0 0);
+    margin-top: -40rem; 
+    z-index: 4;  
+} */
