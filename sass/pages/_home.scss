@@ -51,17 +51,17 @@
     padding: 30rem 0 35rem 0;
     background-position: top;
     margin-top:-34rem;
-    clip-path: polygon(0 66.6%,100% 100%,100% 0,0 0);
+    clip-path: polygon(0 75%,100% 100%,100% 0,0 0);
     z-index: 6;
 } 
 
-/*.section-guides{
+.section-guides{
     position: relative;
     background-image:linear-gradient(rgba($color-gray,0.8), rgba($color-gray,0.8)), url(../img/guides-background.jpg);
     background-size:cover; 
-    padding: 25rem 0 70rem 0;
+    padding: 30rem 0 30rem 0;
     background-position: top;
-    clip-path: polygon(100% 33.3%,100% 66.6%, 0 100%,0 0);
-    margin-top: -40rem; 
+    margin-top: -36rem; 
+    clip-path: polygon(0 100%, 100% 75%, 100% 0,0 0);
     z-index: 4;  
-} */
+} 

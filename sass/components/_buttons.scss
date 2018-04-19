@@ -17,7 +17,7 @@
     &--white:visited{
         color: $color-white;
         border: 2px solid $color-white;
-        animation: moveInBottom 2s ease-in;
+        
     }
 
     &--white:hover{
@@ -48,6 +48,10 @@
     &--gold:active{
         transform: translateY(-1px);
         box-shadow: 0 1rem 2rem rgba($color-black,0.2);  
+    }
+
+    &--animated{
+        animation: moveInBottom 2s ease-in;
     }
     
 }

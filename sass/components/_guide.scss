@@ -1,0 +1,42 @@
+.guide{
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    height: 30rem; 
+
+    &__box{
+        width: 23rem;
+        height: 23rem;
+        margin: 0 auto;
+        -webkit-clip-path: circle(50% at 50% 50%); 
+        clip-path: circle(50% at 50% 50%);
+        backface-visibility: hidden;
+    }
+
+    &__img{
+        height:100%;
+        transform: translateX(-5rem);
+        backface-visibility: hidden;
+    }
+
+    &__name{
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        color: $color-white;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: 300;
+    }
+    &__social{
+        text-align: center;
+        transform: translateX(-1rem);
+    }
+    &__icon{
+        color: $color-white;
+        text-align: center;
+
+        &::before{
+            font-size: 1.8rem;  
+        }
+    }
+}
