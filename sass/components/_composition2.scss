@@ -1,0 +1,47 @@
+.news-box{
+    width: 65%; 
+    height: 20rem;
+    position: relative;
+    color: $color-primary;
+    border:2px solid $color-primary;
+    margin: 0 auto;
+    margin-top: 15rem;
+
+    &__date{
+        font-size: 1.8rem;
+        position: absolute;
+        top: 5rem; 
+        right: -1rem;
+        transform: rotate(90deg);
+        z-index: 5;
+    }
+
+    &__img{ 
+        width: 90%; 
+        position: absolute;
+        top: -7rem;
+        left: -3rem;  
+    }
+
+    &__title{
+        position: absolute;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        left:5%;
+        top: 80%;
+    }
+
+    &__arrow{
+        display:inline-block;
+        position: absolute;
+        top: 80%;
+        right: 1.5rem;
+
+        &:before{
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+    }
+
+
+}

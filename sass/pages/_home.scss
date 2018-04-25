@@ -65,3 +65,14 @@
     clip-path: polygon(0 100%, 100% 75%, 100% 0,0 0);
     z-index: 4;  
 } 
+
+.section-news{
+    padding:30rem 0 30rem 0;
+    clip-path: polygon(0 75%,50% 100%,100% 75%,100% 0,0 0);
+    background-image:linear-gradient(rgba($color-white,0.88), rgba($color-white,0.88)), url(../img/news-background.jpg);
+    background-size:cover; 
+    background-position: top;
+    margin-top:-32rem; 
+    position: relative;
+    z-index: 3;   
+}
