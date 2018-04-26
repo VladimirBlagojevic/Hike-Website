@@ -68,7 +68,7 @@
 
 .section-news{
     padding:30rem 0 30rem 0;
-    clip-path: polygon(0 75%,50% 100%,100% 75%,100% 0,0 0);
+    clip-path: polygon(0 90%,50% 100%,100% 90%,100% 0,0 0);
     background-image:linear-gradient(rgba($color-white,0.88), rgba($color-white,0.88)), url(../img/news-background.jpg);
     background-size:cover; 
     background-position: top;
@@ -76,3 +76,34 @@
     position: relative;
     z-index: 3;   
 }
+
+.footer{
+    padding: 20rem 0 6rem 0;
+    background-color: $color-gray-dark;
+    margin-top: -20rem; 
+    
+    &__logo{
+        float: left;
+        margin-top: 1.5rem;
+    }
+
+    &__logo-img{
+        height: 5rem; 
+    }
+
+    &__nav{
+        float: right;
+        padding-top: 3rem;
+        color: $color-white;
+        list-style-type: none;
+    }
+
+    &__li{
+        display: inline-block;
+        padding-right: 2rem;
+        font-size: 1.8rem;
+        font-weight: 300; 
+
+    }
+}
+
