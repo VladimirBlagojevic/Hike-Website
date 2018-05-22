@@ -1,0 +1,134 @@
+.navigation{
+
+    &__checkbox{ 
+        display: none;
+    }
+
+    &__button{
+        display: block;
+        height: 5rem;
+        width: 5rem;
+        position: fixed;
+        top: 7rem;
+        right: 10rem;
+        border-radius: 50%;
+        background-color: $color-white;
+        padding: 2rem;
+        z-index: 1000;
+        text-align: center;
+        border: 3px solid $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+    }
+
+    &__icon{
+        font-weight: 100;
+        position: relative;
+        z-index: 1000;
+        &,
+        &::before,
+        &::after{
+            @include absCenter;
+            display: inline-block;
+            width: 2.5rem;
+            height: 2px;
+            background-color: $color-gray;
+             
+        }
+
+        &::before,
+        &::after{
+            content:""; 
+            transition: all 0.2s;
+        }
+
+        &::before{
+            margin-top: -0.8rem; 
+        }
+
+        &::after{
+            margin-top: 0.8rem;
+        }
+    }
+    &__button:hover &__icon::before{margin-top: -1rem};
+    &__button:hover &__icon::after{margin-top: 1rem};
+
+    &__background{
+        position: fixed;
+        background-image:linear-gradient(rgba($color-black,0.7), rgba($color-black,0.7)), url(../img/header-background2.jpg);
+        background-size: cover;
+        background-position: top;
+        clip-path: polygon(0 85vh,50% 100%,100% 85vh,100% 0,0 0);
+        z-index: 500;
+        top: 0;
+        left:0;
+        height: 100vh;
+        width: 100%;
+        opacity: 0; 
+        visibility: hidden;
+        transform: scale(0.5);
+        transition: all 0.4s; 
+    }
+
+    &__nav{
+        opacity: 0;
+        width: 30%; 
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index:700;
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);  
+    }
+
+    &__list{
+        @include absCenter;
+        display: block;
+        color: $color-white;
+        list-style: none;
+        text-align: center; 
+
+    }
+
+    &__logo{
+        position: absolute;
+        top: 25rem;
+        left: 47%;   
+        height: 12rem;
+        width: 12rem; 
+    }
+    
+    &__logo-img{
+        width: 100%;
+    }
+
+    &__link{
+        &:visited,
+        &:link{
+            text-decoration: none;
+            font-size: 4rem;
+            color:$color-white;
+            text-transform: uppercase;
+            line-height: 1.4;
+            letter-spacing: 3px;
+            font-weight: 700;
+            transition: all 0.4s;
+
+        &:hover{
+            color: $color-primary;
+        }
+
+        }
+    }
+
+    &__checkbox:checked ~ &__background{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+   &__checkbox:checked ~ &__nav{
+       opacity: 1;
+       width: 100%;
+       
+   }
+}
