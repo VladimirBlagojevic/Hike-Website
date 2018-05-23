@@ -1,0 +1,109 @@
+.guide-card{
+    width: 100%;
+    position: relative;
+    
+    &__box{
+        position: relative;
+        width: 22rem;
+        height: 32rem;
+        border: 1.5px solid $color-primary;
+        
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+        &--1{
+            margin-left: 42%; 
+        }
+
+        &--2{
+           margin-left: 17%; 
+        }
+    }
+
+
+
+    &__icon{ 
+        color: $color-primary;
+        
+        &:before{
+            font-size: 2.5rem;
+            margin:1rem;
+        } 
+    }
+
+    &__icon-text{
+        color: $color-gray;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    &__img-box{
+        height: 24rem;
+        width: 20rem;
+    }
+
+    &__img{ 
+        width: 100%;
+        height: 100%;
+        transform: translateX(-3rem);
+        border-radius: 1px; 
+    }
+ 
+    &__button{
+        position: absolute; 
+        top: 42%;
+        right: -2.5rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__link{
+        &:visited,
+        &:link{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            display: inline-block;
+            text-decoration: none;
+            background-color: $color-primary; 
+            transition: all 0.5s;
+
+        &:hover{
+                background-color: $color-white;
+                box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+                transform: translateY(-0.3rem);   
+            }
+
+        &:active{
+            transform: translateY(0.1rem);
+            box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+        }
+        }
+    }
+
+    &__arrow{
+        
+        color: $color-white;
+        
+        &:before{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 2.5rem;
+        margin-left:0.3rem;
+        transition: all 0.5s; 
+        }
+    }
+
+    &__link:hover  &__arrow:before{
+        color:$color-primary;
+    }
+
+    
+
+    &__name{
+        font-size: 1.6rem;
+        padding-left:0.5rem;
+        text-transform: uppercase;
+    }
+}

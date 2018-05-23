@@ -49,6 +49,7 @@
             margin-top: 0.8rem;
         }
     }
+
     &__button:hover &__icon::before{margin-top: -1rem};
     &__button:hover &__icon::after{margin-top: 1rem};
 
@@ -86,7 +87,6 @@
         color: $color-white;
         list-style: none;
         text-align: center; 
-
     }
 
     &__logo{
@@ -129,6 +129,5 @@
    &__checkbox:checked ~ &__nav{
        opacity: 1;
        width: 100%;
-       
    }
 }
