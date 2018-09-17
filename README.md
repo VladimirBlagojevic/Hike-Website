@@ -18,7 +18,7 @@
 
 ## Description
 
- Project that i made to practice async function and API use. U getting weather info on your location in real time for next five days, also wind and humidity-plus current time and date.
+ Website made to practice advanced use of CSS with Sass(SCSS) 
 
 #### Technologies
 
